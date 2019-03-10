@@ -142,7 +142,9 @@ Gang of four has defined 7 Structural Design Patterns
 • Flyweight 
 • Proxy
   
-## Adapter : Match interfaces of different classes
+## Adapter : 
+
+Match interfaces of different classes
 • An adapter allows two incompatible interfaces to work together.
 • The Adapter design pattern allows incompatible classes to interact with each other by converting the interface of one class into an interface expected by the clients.
 • Leveraging on Adapter pattern Improves reusability of older functionality.
