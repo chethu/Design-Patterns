@@ -203,6 +203,8 @@ Implementation Guidelines : We need to use Facade Design Pattern when
 3. We want to layer the subsystems. Use a facade to define an entry point to each subsystem level.
 
  
-Flyweight : A fine-grained instance used for efficient sharing
+## Flyweight : 
+
+A fine-grained instance used for efficient sharing
 • The Flyweight pattern reduces the number of low-level, detailed objects within a system by sharing objects.
 • The Flyweight pattern defines a structure for sharing objects and focuses its capabilities for space efficiency.
