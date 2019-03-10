@@ -30,8 +30,9 @@ Gang of Four have categorised the design patterns in to 3 types based on differe
 
 
 ## Singleton Pattern
-Singleton Pattern belongs to Creational type pattern.  Gang of four have defined five design patterns 
-that belongs to creational design type category. Singleton is one among them and the rest are Factory, Abstract Factory, Builder and Prototype patterns. As the name implies, creational design type deals with object creation mechanisms. Basically, to simplify this, creational pattern explain us the creation of objects in a manner suitable to a given situation. 
+Singleton Pattern belongs to Creational type pattern.  
+
+Gang of four have defined five design patterns that belongs to creational design type category. Singleton is one among them and the rest are Factory, Abstract Factory, Builder and Prototype patterns. As the name implies, creational design type deals with object creation mechanisms. Basically, to simplify this, creational pattern explain us the creation of objects in a manner suitable to a given situation. 
 
 Singleton design pattern is used when we need to ensure that only one object of a particular class is Instantiated. That single instance created is responsible to coordinate actions across the application.
 
@@ -46,3 +47,43 @@ This Thread racing situation causes thread safety issues in Singleton Initializa
 
 How to implement a Thread Safe singleton class : Locks are the best way to control thread race condition and they help us to overcome the present situation. 
 
+For more details on double check locking please refer to the below article
+https://en.wikipedia.org/wiki/Double-... 
+
+
+Differences between Singleton and static classes
+1. Static is a keyword and Singleton is a design pattern
+2. Static classes can contain only static members
+3. Singleton is an object creational pattern with one instance of the class
+4. Singleton can implement interfaces, inherit from other classes and it aligns with the OOPS concepts
+5. Singleton object can be passed as a reference
+6. Singleton supports object disposal
+7. Singleton object is stored on heap
+8. Singleton objects can be cloned
+
+Static class example - Temperature Converter 
+We are pretty sure that the formulas for foreign heat to Celsius conversion and vice versa will not change at all and hence we can use static classes with static methods that does the conversion for us. Please refer to the below code for more details.
+
+Real world usage of Singleton : Listed are few real world scenarios for singleton usage
+1. Exception/Information logging
+2. Connection pool management 
+3. File management
+4. Device management such as printer spooling
+5. Application Configuration management
+6. Cache management
+7. And Session based shopping cart are some of the real world usage of singleton design pattern
+
+
+## What is Factory Design Pattern : 
+
+Gang of Four Definition 
+Define an interface for creating an object, but let subclasses decide which class to instantiate. The Factory method lets a class defer instantiation it uses to subclasses
+
+Factory pattern is one of the most used design patterns in real world applications. Factory pattern creates object without exposing the creation logic to the client and refer to newly created object using a common interface
+
+Implementation Guidelines
+
+We need to choose Factory Pattern when
+1. The Object needs to be extended to subclasses
+2. The Classes doesn’t know what exact sub-classes it has to create
+3. The Product implementation tend to change over time and the Client remains unchanged
