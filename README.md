@@ -36,3 +36,13 @@ that belongs to creational design type category. Singleton is one among them and
 Singleton design pattern is used when we need to ensure that only one object of a particular class is Instantiated. That single instance created is responsible to coordinate actions across the application.
 
 
+Lazy Initialization in Singleton : GetInstance Property is responsible for the Singleton Instance creation. Singleton object is not instantiated until and unless GetInstance is invoked. Hence, there is a delay in instance creation till the GetInstance is accessed.
+This Delay in Instance creation is called Lazy Initialization. 
+
+How to use Multithreads in Singleton : The lazy initialization works perfectly well when we invoke the GetInstance in a Single threaded approach. However, there is a chance that we may end up creating multiple instances when multiple threads invoke the GetInstance at the same time.
+
+This Thread racing situation causes thread safety issues in Singleton Initialization and further the current code ends up in creating multiple instances of Singleton objects in memory.
+
+
+How to implement a Thread Safe singleton class : Locks are the best way to control thread race condition and they help us to overcome the present situation. 
+
