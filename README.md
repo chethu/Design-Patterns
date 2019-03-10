@@ -87,3 +87,21 @@ We need to choose Factory Pattern when
 1. The Object needs to be extended to subclasses
 2. The Classes doesn’t know what exact sub-classes it has to create
 3. The Product implementation tend to change over time and the Client remains unchanged
+
+
+## What is Abstract Factory Design Pattern
+ 
+Gang Of Four Definition : "The Abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes"
+
+The Abstract Factory Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes
+
+Abstract Factory pattern belongs to creational patterns and is one of the most used design patterns in real world applications
+
+Abstract factory is a super factory that creates other factories
+
+Implementation Guidelines
+
+We need to Choose Abstract Factory Pattern when
+1. The application need to create multiple families of objects or products
+2. We need to use only one of the subset of families of objects at a given point of time
+3. We want to hide the implementations of the families of products by decoupling the implementation of each of these operations
